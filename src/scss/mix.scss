@@ -33,6 +33,19 @@
     margin: 4px 0px;
     padding-left: 8px;
 }
+@mixin input_1() {
+    border: 1px solid;
+    width: 400px;
+    height: 44px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    padding-left: 8px;
+    border-radius: 8px;
+    left: 94px;
+    top: 391px;
+}
 @mixin boder {
     border-radius: 8px;
 }
@@ -46,4 +59,17 @@
     line-height: 24px;
     width: 162px;
     height: 47px;
+    font-weight: bold;
+}
+@mixin knot_1 {
+    cursor: pointer;
+    padding: 10px 24px;
+    background: #ffff;
+    border-radius: 8px;
+    border: 1px solid #ff9138;
+    font-size: 16px;
+    line-height: 24px;
+    width: 162px;
+    height: 47px;
+    font-weight: bold;
 }

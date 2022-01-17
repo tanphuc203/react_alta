@@ -1,4 +1,3 @@
-
 import "./index.scss";
 import Logo from '../../img/Logo.png';
 import Abc from '../../img/Group.png';
@@ -22,7 +21,7 @@ const index = () => {
                 <img src={Abc} alt="" />
                 <div className="login_right_title">
                     <p className="login_right_title_top">Hệ thống</p>
-                    <p className="login_right_title_bottom">QUẢN LÝ XẾP HẠNG</p>
+                    <p className="login_right_title_bottom">QUẢN LÝ XẾP HÀNG</p>
                 </div>
             </div>
        </div>

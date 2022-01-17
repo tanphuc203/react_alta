@@ -1,44 +1,57 @@
 @import "../../scss/index.scss";
 
-.login {
+.nologin {
     display: flex;
     background: $gray;
     height: 100vh;
-    .login_left {
-        .login_left_nd {
+    .nologin_left {
+        .nologin_left_nd {
             position: absolute;
             // width: 142px;
             // height: 54px;
             left: 5%;
             top: 30%;
-            .login_left_nd_1 {
+            .nologin_left_nd_1 {
                 @mixin input {
                 }
             }
-            .login_left_nd_2 {
+            .nologin_left_nd_2 {
                 @include input;
                 font-size: 16px;
                 line-height: 24px;
+                border: 1px solid $red;
             }
-            .login_left_nd_3 {
+            .nologin_left_nd_3 {
             }
-            .login_left_nd_4 {
+            .nologin_left_nd_4 {
                 @include input;
                 font-size: 16px;
                 line-height: 24px;
+                border: 1px solid $red;
             }
-            .login_left_nd_5 {
+            .nologin_left_nd_5 {
                 color: #e73f3f;
                 cursor: pointer;
                 width: 384px;
                 height: 44px;
                 display: flex;
+                margin-top: 10px;
             }
-            .login_left_nd_6 {
+            .nologin_left_nd_6 {
                 @include knot;
                 color: #ffff;
                 margin: 0 auto;
                 display: block;
+            }
+            .nologin_left_nd_7 {
+                color: #e73f3f;
+                cursor: pointer;
+                text-align: center;
+                margin-top: 10px;
+            }
+            .icon{
+                margin-top: 3px;
+                margin-right: 5px;
             }
         }
         img {
@@ -52,7 +65,7 @@
         width: 168, 27px;
         height: 112, 93px;
     }
-    .login_right {
+    .nologin_right {
         background: #ffff;
         width: 848px;
 
@@ -62,14 +75,14 @@
             top: 82px;
             margin-left: 79px;
         }
-        .login_right_title {
+        .nologin_right_title {
             position: absolute;
             // width: 142px;
             // height: 54px;
             right: 3%;
             top: 46%;
         }
-        .login_right_title_top {
+        .nologin_right_title_top {
             font-family: Nunito;
             font-style: normal;
             font-weight: normal;
@@ -79,7 +92,7 @@
             color: $text;
             margin-right: 60%;
         }
-        .login_right_title_bottom {
+        .nologin_right_title_bottom {
             font-family: Nunito;
             font-style: normal;
             font-weight: 900;
