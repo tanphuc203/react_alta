@@ -1,0 +1,56 @@
+@import "../../scss/index.scss";
+.fpass {
+    display: flex;
+    background: #ffff;
+    height: 100vh;
+    display: flex;
+    .fpass_left {
+        background: #ffff;
+        flex: 1;
+        // width: 168, 27px;
+        // height: 112, 93px;
+        .img {
+            position: absolute;
+            left: 11.5%;
+            right: 0%;
+            top: 2.5%;
+            bottom: 16.97%;
+        }
+        .fpass_right_bot {
+            position: absolute;
+            // width: 142px;
+            // height: 54px;
+            left: 5%;
+            top: 30%;
+            .fpass_right_bot_1{
+                display: block;
+
+            }
+            .fpass_right_bot_2{
+
+            }
+            .fpass_right_bot_3{
+
+            }
+            .fpass_right_bot_4{
+
+            }
+            .fpass_right_bot_5{
+                background: red;
+            }
+        }
+
+    }
+    .fpass_right {       
+        background: #ffff;
+        width: 848px;
+        height: 810px;
+        left: 592px;
+        top: 112.94px;
+        .img {
+            top: 82px;
+            margin-left: 79px;
+        }
+
+    }
+}

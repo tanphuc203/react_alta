@@ -1,0 +1,49 @@
+@mixin login() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 215px;
+    top: 511px;
+    background: #ff9138;
+}
+@mixin frame() {
+    position: static;
+    width: 400px;
+    height: 44px;
+    left: 0px;
+    top: 31px;
+}
+@mixin button() {
+    width: 162px;
+    height: 40px;
+}
+@mixin input() {
+    border-radius: 8px;
+    border: 1px solid grey;
+    width: 384px;
+    height: 44px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 4px 0px;
+    padding-left: 8px;
+}
+@mixin boder {
+    border-radius: 8px;
+}
+@mixin knot {
+    cursor: pointer;
+    padding: 10px 24px;
+    background: #ff9138;
+    border-radius: 8px;
+    border: 1px solid grey;
+    font-size: 16px;
+    line-height: 24px;
+    width: 162px;
+    height: 47px;
+}
