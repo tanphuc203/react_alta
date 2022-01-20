@@ -1,0 +1,80 @@
+@import "../../../scss/index.scss";
+.dashbroad {
+    display: flex;
+    min-height: 100vh;
+    .dashbroad_container {
+        background-color: #ccc;
+        flex: 1;
+        position: relative;
+        .dashbroad_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            margin-top: 29px;
+            margin-left: 24px;
+            margin-right: 24px;
+            margin-bottom: 45px;
+            .dashbroad_top_1 {
+                width: 50%;
+                span {
+                    line-height: 30px;
+                    color: #ff9138;
+                    margin: 2%;
+                    font-size: 24px;
+                    left: 300px;
+                }
+            }
+            .dashbroad_top_2 {
+                width: 50%;
+                display: flex;
+                justify-content: right;
+                img {
+                    height: 40px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 12px;
+                }
+            }
+        }
+        .dashbroad_bottom {
+            color: #ff7506;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            margin-top: 36px;
+        }
+        .dashbroad_bottom_about {
+            display: flex;
+            margin-top: 15px;
+            justify-content: left;
+
+            .dashbroad_bottom_about_stt {
+                background-color: #fff;
+                width: 186px;
+                height: 120px;
+                border-radius: 10px;
+                display: flex;
+                margin-left: 28px;
+                margin-right: 13px;
+                padding: 7px;
+
+                display: flex;
+                flex-direction: column;
+                .dashbroad_bottom_about_stt_itemtop {
+                    align-items: center;
+                    .dashbroad_bottom_about_stt_itemttitle {
+                        // font-style: normal;
+                        // font-weight: bold;
+                        // font-size: 14px;
+                        // line-height: 18px;
+                        // margin-left: 10px;
+                        // width: 70px;
+                        // color: #535261;
+                    }
+                }
+            }
+        }
+    }
+}

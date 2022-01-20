@@ -2,6 +2,7 @@ import React from 'react';
 import "./index.scss";
 import Logo from '../../img/Logo.png'
 import Frame from '../../img/Frame.png'
+import { Link } from 'react-router-dom';
 const index = () => {
     return (
         <div className="repass">
@@ -14,7 +15,9 @@ const index = () => {
                         <input className="repass_right_bot_3" type={"password"} placeholder="Password"></input>
                         <p className="repass_right_bot_4">Đặt lại mật khẩu</p>
                         <input className="repass_right_bot_5" type={"password"} placeholder="Password"></input>
-                        <button className="repass_right_bot_6">Xác nhận</button>
+                        <Link to="/">
+                            <button className="repass_right_bot_6">Xác nhận</button>
+                        </Link>
                     </div>
                 </div>
             </div>

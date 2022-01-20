@@ -2,6 +2,7 @@ import "./index.scss";
 import Logo from '../../img/Logo.png';
 import Abc from '../../img/Group.png';
 import React from 'react'
+import { Link} from 'react-router-dom';
 
 const index = () => {
     return (
@@ -13,8 +14,12 @@ const index = () => {
                     <input className="login_left_nd_2" type={"text"} placeholder="Username"></input>
                     <p className="login_left_nd_3">Mật khẩu*</p>
                     <input className="login_left_nd_4" type={"password"} placeholder="Password"></input>
-                    <p className="login_left_nd_5">Quên mật khẩu ?</p>
-                    <button className="login_left_nd_6">Đăng nhập</button>
+                    <Link to="/Repassword">
+                        <p className="login_left_nd_5">Quên mật khẩu ?</p>
+                    </Link>
+                    <Link to="/Infor">
+                        <button className="login_left_nd_6">Đăng nhập</button>
+                    </Link>
                 </div>
            </div>
             <div className="login_right">
