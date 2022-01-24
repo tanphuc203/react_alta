@@ -15,6 +15,7 @@
             margin-left: 24px;
             margin-right: 24px;
             margin-bottom: 45px;
+            height: 20px;
             .dashbroad_top_1 {
                 width: 50%;
                 span {
@@ -25,17 +26,7 @@
                     left: 300px;
                 }
             }
-            .dashbroad_top_2 {
-                width: 50%;
-                display: flex;
-                justify-content: right;
-                img {
-                    height: 40px;
-                    display: flex;
-                    flex-direction: column;
-                    margin-left: 12px;
-                }
-            }
+            
         }
         .dashbroad_bottom {
             color: #ff7506;
@@ -44,11 +35,14 @@
             font-size: 24px;
             line-height: 36px;
             margin-top: 36px;
+            margin-left: 24px;
         }
         .dashbroad_bottom_about {
             display: flex;
             margin-top: 15px;
             justify-content: left;
+            width: 840px;
+            margin: 0 auto;
 
             .dashbroad_bottom_about_stt {
                 background-color: #fff;
@@ -62,8 +56,11 @@
 
                 display: flex;
                 flex-direction: column;
-                .dashbroad_bottom_about_stt_itemtop {
+                .dashbroad_bottom_about_stt_cal {
                     align-items: center;
+                    display: flex;
+                    font-weight: bold;
+
                     .dashbroad_bottom_about_stt_itemttitle {
                         // font-style: normal;
                         // font-weight: bold;
@@ -74,7 +71,37 @@
                         // color: #535261;
                     }
                 }
+                .dashbroad_bottom_about_stt_tik {
+                    align-items: center;
+                    display: flex;
+                    font-weight: bold;
+                }
+                .dashbroad_bottom_about_stt_use {
+                    align-items: center;
+                    display: flex;
+                    font-weight: bold;
+                }
+                .dashbroad_bottom_about_stt_sav {
+                    align-items: center;
+                    display: flex;
+                    font-weight: bold;
+                }
             }
+        }
+        .chart {
+            background-color: #fff;
+            // position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin-top: 16px;
+            margin-left: 24px;
+            margin-right: 24px;
+            padding: 37px;
+            border-radius: 12px;
+            width: 791px;
+            height: 484px;
         }
     }
 }
