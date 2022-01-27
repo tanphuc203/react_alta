@@ -61,8 +61,6 @@ const index = () => {
         <div className='dashbroad'>
             <Bodyleft />
             <div className='dashbroad_container'>
-
-
                 <div className='dashbroad_top'>
                     <div className='dashbroad_top_1'>
                         <span >Dashboard</span>

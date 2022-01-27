@@ -7,16 +7,13 @@ import Cloud from "../../../img/Cloud.png"
 import Green from "../../../img/CircleGreen.png"
 import Book from "../../../img/Book.png"
 import Date from "../../../img/Date.png"
-import Avt from "../../../img/Avt.png"
-
-
+import User from "../../User"
 
 const index = () => {
     return <div className='bodyright'>
         <div className='bodyright_top'>
-            <div className='dashbroad_top_2'>
-                <img src={Avt} alt='' />
-                <span>Xin chào <br /><b>Lê Quỳnh Ái Vân</b></span>
+            <div>
+                <User />
             </div>
             <div className='bodyright_top_title'>
                 <span className="">
@@ -28,7 +25,7 @@ const index = () => {
                     <div className='bodyright_top_nd_1_right'>
                         <img src={Red} alt='' />
                         <span className='red' >4.221<br /><b><img src={Tv} alt='' /> Thiết bị</b></span>
-                        
+
                     </div>
                     <div className='bodyright_top_nd_1_left'>
                         <div>

@@ -9,6 +9,9 @@ import Dashbroadday from "./component/Dashbroad/Dashbroadday/index";
 import Dashbroadright from "./component/Dashbroad/Dashbroadright/index";
 import Chart from "./component/Chart/index";
 import Calendar from './component/Calendar/index';
+import User from './component/User/index';
+import Equipment from './component/Equipment/index';
+import Deviceinfor from './component/Deviceinfor/index';
 ;
 
 
@@ -26,6 +29,9 @@ function App() {
           <Route path="/Dashbroadright" element={<Dashbroadright/>} />
           <Route path="/Chart" element={<Chart />} />
           <Route path="Calendar" element={<Calendar />} />
+          <Route path="User" element={<User />} />
+          <Route path="Equipment" element={<Equipment />} />
+          <Route path="/Deviceinfor" element={<Deviceinfor />} />
           {/* //test */}
       </Routes>
     </div>        

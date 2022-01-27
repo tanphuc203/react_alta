@@ -46,6 +46,22 @@
     left: 94px;
     top: 391px;
 }
+@mixin input_2() {
+    width: 540px;
+    height: 44px;
+    left: 0px;
+    top: 32px;
+    background: #ffffff;
+    border: 1.5px solid #d4d4d7;
+    box-sizing: border-box;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 8px 0px;
+    padding-left: 8px;
+    
+}
 @mixin boder {
     border-radius: 8px;
 }
