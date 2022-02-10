@@ -2,6 +2,7 @@ import React from 'react';
 import "./index.scss";
 import Bodyleft from "../list/index";
 import Avt from "../../img/Avt.png";
+import User from '../User/index';
 
 const index = () => {
     return (
@@ -9,14 +10,13 @@ const index = () => {
             <Bodyleft />
             <div className='body_container'>
                 <div className='body_container_top'>
-                    <div className='body_container_top_left'>
-                        <span >Thông tin cá nhân</span>
-                    </div>
-                    <div className='body_container_top_right'>
-                        <img src={Avt} alt='' />
-                        <span>Xin chào <br /><b>Lê Quỳnh Ái Vân</b></span>
-                    </div>
+                <div className='body_container_top_left'>
+                    <span className='equipment_right_title_1'>Thông tin cá nhân</span>
                 </div>
+                <div className='user'>
+                    <User />
+                </div>
+            </div>
                 <div className='body_container_bottom'>
                     <div className='body_container_bottom_item'>
                         <img src={Avt} alt='' />
