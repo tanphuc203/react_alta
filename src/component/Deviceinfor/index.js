@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import Bodyleft from '../list/index';
 import User from '../User/index';
+import { Link} from 'react-router-dom';
 
 const index = () => {
     return <div className='deviceinfor'>
@@ -51,7 +52,9 @@ const index = () => {
                     </div>
                 </div>
                 <div className='deviceinfor_input_button'>
-                    <button className="deviceinfor_input_button_1">Hủy</button>
+                    <Link to="/Equipment">
+                        <button className="deviceinfor_input_button_1">Hủy</button>
+                    </Link>
                     <button className="deviceinfor_input_button_2">Thêm thiết bị</button>
                 </div>
             </div>

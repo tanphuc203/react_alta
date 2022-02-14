@@ -59,5 +59,78 @@
             justify-content: flex-end;
             color: #FF7506;
         }
+        .equipment_right_content {
+            .equipment_right_content_icon {
+                .equipment_right_content_icon_1 {
+                    .equipment_right_content_icon_1_nd {
+                        .a {
+                            width: 300px;
+                            height: 44px;
+                            border: 1.5px solid #D4D4D7;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 12px;
+                        }
+                    }
+                    .equipment_right_content_icon_2_nd {
+                        .a {
+                            width: 300px;
+                            height: 44px;
+                            border: 1.5px solid #D4D4D7;
+                            box-sizing: border-box;
+                            border-radius: 8px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px 12px;
+                        }
+                    }
+                    .equipment_right_content_icon_3_nd {
+                        .a {
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #282739;
+                        }
+                    }
+
+                }
+
+            }
+            .equipment_right_content_table {
+                margin-left: 24px;
+                .equipment_right_content_table_device {
+                    .title {
+                        background-color: #FF9138;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #ffff;
+                        height: 49px;
+                    }
+                    border-collapse: collapse;
+                    width: 100%;
+                    background-color: #FFF2E7;
+                    .redd {
+                        margin-right: 4px;
+                        color: red;
+
+                    }
+                    .gren {
+                        margin-right: 4px;
+                        color: #35C75A;
+                    }
+
+                }
+
+            }
+        }
     }
 }

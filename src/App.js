@@ -12,6 +12,7 @@ import Calendar from './component/Calendar/index';
 import User from './component/User/index';
 import Equipment from './component/Equipment/index';
 import Deviceinfor from './component/Deviceinfor/index';
+import Number from './component/Number/index';
 ;
 
 
@@ -28,10 +29,11 @@ function App() {
           <Route path="/Dashbroadday" element={<Dashbroadday />} />
           <Route path="/Dashbroadright" element={<Dashbroadright/>} />
           <Route path="/Chart" element={<Chart />} />
-          <Route path="Calendar" element={<Calendar />} />
-          <Route path="User" element={<User />} />
-          <Route path="Equipment" element={<Equipment />} />
+          <Route path="/Calendar" element={<Calendar />} />
+          <Route path="/User" element={<User />} />
+          <Route path="/Equipment" element={<Equipment />} />
           <Route path="/Deviceinfor" element={<Deviceinfor />} />
+          <Route path="/Number" element={<Number />} />
           {/* //test */}
       </Routes>
     </div>        
