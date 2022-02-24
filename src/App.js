@@ -13,6 +13,8 @@ import User from './component/User/index';
 import Equipment from './component/Equipment/index';
 import Deviceinfor from './component/Deviceinfor/index';
 import Number from './component/Number/index';
+import Devicedetails from './component/Devicedetails/index';
+import Deviceupdate from './component/Deviceupdate/index';
 ;
 
 
@@ -34,6 +36,8 @@ function App() {
           <Route path="/Equipment" element={<Equipment />} />
           <Route path="/Deviceinfor" element={<Deviceinfor />} />
           <Route path="/Number" element={<Number />} />
+          <Route path="/Devicedetails" element={<Devicedetails />} />
+          <Route path="/Deviceupdate" element={<Deviceupdate />} />
           {/* //test */}
       </Routes>
     </div>        

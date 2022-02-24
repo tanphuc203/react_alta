@@ -55,7 +55,9 @@ const index = () => {
                     <Link to="/Equipment">
                         <button className="deviceinfor_input_button_1">Hủy</button>
                     </Link>
+                    <Link to="/Devicedetails">
                     <button className="deviceinfor_input_button_2">Thêm thiết bị</button>
+                    </Link>
                 </div>
             </div>
         </div>
