@@ -15,6 +15,7 @@ import Deviceinfor from './component/Deviceinfor/index';
 import Number from './component/Number/index';
 import Devicedetails from './component/Devicedetails/index';
 import Deviceupdate from './component/Deviceupdate/index';
+import Service from './component/Servicee/index';
 ;
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/Number" element={<Number />} />
           <Route path="/Devicedetails" element={<Devicedetails />} />
           <Route path="/Deviceupdate" element={<Deviceupdate />} />
+          <Route path="/Service" element={<Service />} />
           {/* //test */}
       </Routes>
     </div>        

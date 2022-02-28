@@ -1,14 +1,14 @@
 @import "../../scss/index.scss";
-.equipment {
+.service {
     display: flex;
     min-height: 100vh;
-    .equipment_left {
+    .service_left {
     }
-    .equipment_right {
+    .service_right {
         width: 100%;
         // background-color: #b1b1b1;
         position: relative;
-        .equipment_right_top {
+        .service_right_top {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -18,7 +18,7 @@
             margin-right: 24px;
             margin-bottom: 45px;
             height: 20px;
-            .equipment_right_title {
+            .service_right_title {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 20px;
@@ -27,13 +27,13 @@
                 order: 0;
                 flex-grow: 0;
                 margin: 0px 8px;
-                .equipment_right_title_1 {
+                .service_right_title_1 {
                     color: #7e7d88;
                 }
-                .equipment_right_title_2 {
+                .service_right_title_2 {
                     margin-left: 15px;
                 }
-                .equipment_right_title_3 {
+                .service_right_title_3 {
                     color: #ff7506;
                     margin-left: 15px;
                 }
@@ -43,7 +43,7 @@
                 background-color: #ffff;
             }
         }
-        .equipment_right_bottom {
+        .service_right_bottom {
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
@@ -51,7 +51,7 @@
             color: #ff7506;
             margin-left: 24px;
         }
-        .equipment_right_add {
+        .service_right_add {
             display: flex;
             align-items: center;
             padding: 10px;
@@ -59,18 +59,18 @@
             justify-content: flex-end;
             color: #ff7506;
         }
-        .equipment_right_content {
-            .equipment_right_content_icon {
+        .service_right_content {
+            .service_right_content_icon {
                 margin-bottom: 16px;
-                .equipment_right_content_icon_1 {
+                .service_right_content_icon_1 {
                     display: flex;
-                    .equipment_right_content_icon_1_about {
+                    .service_right_content_icon_1_about {
                         margin-left: 24px;
-                        .equipment_right_content_icon_1_title {
+                        .service_right_content_icon_1_title {
                             font-weight: bold;
                             margin-bottom: 4px;
                         }
-                        .equipment_right_content_icon_1_nd {
+                        .service_right_content_icon_1_nd {
                             .a {
                                 width: 300px;
                                 height: 44px;
@@ -85,15 +85,15 @@
                             }
                         }
                     }
-                    .equipment_right_content_icon_2_about {
+                    .service_right_content_icon_2_about {
                         margin-left: 24px;
-                        .equipment_right_content_icon_2_title {
+                        .service_right_content_icon_2_title {
                             font-weight: bold;
                             margin-bottom: 4px;
                         }
-                        .equipment_right_content_icon_2_nd {
+                        .service_right_content_icon_2_nd {
                             .a {
-                                width: 300px;
+                                width: 150px;
                                 height: 44px;
                                 border: 1.5px solid #d4d4d7;
                                 box-sizing: border-box;
@@ -106,13 +106,13 @@
                             }
                         }
                     }
-                    .equipment_right_content_icon_3_about {
+                    .service_right_content_icon_3_about {
                         margin-left: 188px;
-                        .equipment_right_content_icon_3_title {
+                        .service_right_content_icon_3_title {
                             font-weight: bold;
                             margin-bottom: 4px;
                         }
-                        .equipment_right_content_icon_3_nd {
+                        .service_right_content_icon_3_nd {
                             .a {
                                 font-family: Nunito;
                                 font-style: normal;
@@ -132,18 +132,14 @@
                                     align-items: center;
                                     padding: 10px 12px;
                                 }
-                                img {
-                                    margin-left: -35px;
-                                    margin-top: 10px;
-                                }
                             }
                         }
                     }
                 }
             }
-            .equipment_right_content_table {
+            .service_right_content_table {
                 margin-left: 24px;
-                .equipment_right_content_table_device {
+                .service_right_content_table_device {
                     .title {
                         background-color: #ff9138;
                         font-weight: bold;
@@ -152,7 +148,7 @@
                         color: #ffff;
                         height: 49px;
                     }
-                    // border-collapse: collapse;
+                    border-collapse: collapse;
                     width: 100%;
                     background-color: #fff2e7;
                     .redd {
