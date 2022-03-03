@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
 const index = () => {
   return (
     <div className="service">
@@ -27,9 +26,7 @@ const index = () => {
         </div>
         <div className="service_right_bottom">Quản lí dịch vụ</div>
         <div className="service_right_add">
-          <Link to="/Deviceinfor">
-            <img src={Add} alt="" />
-          </Link>
+          <img src={Add} alt="" />
           <span>Thêm dịch vụ</span>
         </div>
         <div className="service_right_content">
@@ -59,8 +56,7 @@ const index = () => {
                 <div className="service_right_content_icon_2_title">
                   <a>Chọn thời gian</a>
                 </div>
-                <div className="service_right_content_icon_2_nd">                
-                </div>
+                <div className="service_right_content_icon_2_nd"></div>
               </div>
               <div className="service_right_content_icon_3_about">
                 <div className="service_right_content_icon_3_title">
@@ -68,17 +64,15 @@ const index = () => {
                 </div>
                 <div className="service_right_content_icon_3_nd">
                   <div className="a">
-                    
-                      <input
-                        className="input"
-                        type="text"
-                        placeholder="Nhập từ khóa "
-                        name="search"
-                      />
-                      <button className="" type="submit">
-                        <i class="fa fa-search"></i>
-                      </button>
-                   
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder="Nhập từ khóa "
+                      name="search"
+                    />
+                    <button className="" type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -92,7 +86,7 @@ const index = () => {
                 <th>Tên dịch vụ</th>
                 <th>Mô tả</th>
                 <th></th>
-                <th>Trạng thái hoạt động</th>         
+                <th>Trạng thái hoạt động</th>
                 <th></th>
                 <th></th>
               </tr>
