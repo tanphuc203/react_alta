@@ -16,6 +16,7 @@ import Number from './component/Number/index';
 import Devicedetails from './component/Devicedetails/index';
 import Deviceupdate from './component/Deviceupdate/index';
 import Service from './component/Servicee/index';
+import Notify from './component/Notify/index';
 ;
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Devicedetails" element={<Devicedetails />} />
           <Route path="/Deviceupdate" element={<Deviceupdate />} />
           <Route path="/Service" element={<Service />} />
+          <Route path="Notify" element={<Notify />} />
           {/* //test */}
       </Routes>
     </div>        

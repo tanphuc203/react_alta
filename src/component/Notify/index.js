@@ -4,7 +4,7 @@ import React, { FC } from "react";
 
 const index = () => {
   return (
-    <div className="Info_top_right_icon">
+    <div className="notify">
       <div className="noti">
         <svg
           width="20"
@@ -25,43 +25,43 @@ const index = () => {
         <div className="noti_icon">
           <h3>Thông báo</h3>
           <div className="noti_icon_item">
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>
-            <div className="noti_icon_item_block">
+            <div className="noti_icon_item_content">
               <p>Người dùng: Nguyễn Thị Thùy Dung</p>
               <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
             </div>

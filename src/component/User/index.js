@@ -3,10 +3,13 @@ import "./index.scss";
 import Bell from "../../img/Bell.png";
 import Avt from "../../img/Avt.png";
 import { Link } from 'react-router-dom';
+import Notify from '../Notify/index';
 
 const index = () => {
     return <div className="user">
-        <img src={Bell} alt="" />
+        <Notify />
+        {/* <img src={Bell} alt="" /> */}
+        
         <div className="user_about">
             <Link to='/Infor'><img src={Avt} alt="" /></Link>
             <div className="user_about_person">
