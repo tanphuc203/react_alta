@@ -68,7 +68,7 @@
         .deviceupdate_input {
             .deviceupdate_input_about {
                 width: 1112px;
-                height: 397px;
+                height: 200px;
                 background-color: #fff;
                 border-radius: 8px;
                 justify-content: space-between;
@@ -91,41 +91,85 @@
                 }
                 .deviceupdate_input_right {
                 }
-                .deviceupdate_input_bottom {
-                    position: absolute;
-                    margin-top: 255px;
-                    .input {
-                        width: 1104px;
-                        height: 44px;
-                        left: 0px;
-                        top: 32px;
-                        background: #ffffff;
-                        border: 1.5px solid #d4d4d7;
-                        box-sizing: border-box;
-                        border-radius: 8px;
-                        flex: none;
-                        order: 1;
-                        flex-grow: 0;
-                        margin: 8px 0px;
-                        padding-left: 8px;
+                // .deviceupdate_input_bottom {
+                //     position: absolute;
+                //     margin-top: 255px;
+                //     .input {
+                //         width: 1104px;
+                //         height: 44px;
+                //         left: 0px;
+                //         top: 32px;
+                //         background: #ffffff;
+                //         border: 1.5px solid #d4d4d7;
+                //         box-sizing: border-box;
+                //         border-radius: 8px;
+                //         flex: none;
+                //         order: 1;
+                //         flex-grow: 0;
+                //         margin: 8px 0px;
+                //         padding-left: 8px;
+                //     }
+                // }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                margin-left: 68px;
+                label {
+                  font-weight: 600;
+                  font-size: 16px;
+                  margin: 16px 0 8px 0;
+                  color: #282739;
+                }
+                .text {
+                    width: 1120px;
+                    height: 95px;
+                    padding: 6px;
+                    border: 1.5px solid #ffac6a;
+                    box-sizing: border-box;
+                    border-radius: 8px;
+                    background-color: #fff;
+                    &_item {
+                        display: inline-block;
+                        button {
+                            border: none;
+                            padding: 4.5px 12px;
+                            border-radius: 9px;
+                            background: #ffac6a;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: #fff;
+                            font-weight: bold;
+                            font-size: 14px;
+                            &:nth-child(n + 1) {
+                                margin-right: 15px;
+                                margin-bottom: 15px;
+                            }
+                            svg {
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
             }
+
+            
             .deviceupdate_input_button {
                 margin-left: 35%;
-                margin-top: -40px;
+                // margin-top: -40px;
                 .deviceupdate_input_button_1 {
                     @include knot_1;
                     color: $abc;
                     float: left;
                 }
                 .deviceupdate_input_button_2 {
-                    @include knot;               
-                    color: #ffff;    
+                    @include knot;
+                    color: #ffff;
                     margin-left: 32px;
                 }
             }
-            
         }
     }
 }

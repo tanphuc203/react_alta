@@ -26,7 +26,9 @@ const index = () => {
         </div>
         <div className="service_right_bottom">Quản lí dịch vụ</div>
         <div className="service_right_add">
-          <img src={Add} alt="" />
+          <Link to="/Addservices">
+            <img src={Add} alt="" />
+          </Link>
           <span>Thêm dịch vụ</span>
         </div>
         <div className="service_right_content">
