@@ -105,28 +105,95 @@
                         padding-left: 8px;
                     }
                 }
-                .addservices_input_bottom {
+                .bottom {
                     position: absolute;
                     margin-top: 192px;
-                    color: $text;
-                    font-weight: bold;
-                    font-size: 20px;
-                    line-height: 30px;
 
-                    .input {
-                        width: 1104px;
-                        height: 44px;
-                        left: 0px;
-                        top: 32px;
-                        background: #ffffff;
-                        border: 1.5px solid #d4d4d7;
-                        box-sizing: border-box;
-                        border-radius: 8px;
-                        flex: none;
-                        order: 1;
-                        flex-grow: 0;
-                        margin: 8px 0px;
-                        padding-left: 8px;
+                    .addservices_bottom {
+                        color: $text;
+                        font-weight: bold;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                    .addservices_bottom_checkbox {
+                        display: flex;
+                        justify-content: space-between;
+                        .addservices_bottom_checkbox_items {
+                            flex-direction: column;
+                            .addservices_bottom_checkbox_item {
+                                align-items: center;
+                            }
+                            .addservices_bottom_checkbox_item input {
+                                width: 15px;
+                                height: 15px;
+                                background: #ffffff;
+                                padding: 0;
+                                border: 1px solid #4277ff;
+                                box-sizing: border-box;
+                                border-radius: 4px;
+                                -webkit-appearance: none;
+                                -moz-appearance: none;
+                                background-clip: border-box;
+                                margin-right: 5px;
+                                flex: none;
+                                order: 1;
+                                flex-grow: 0;
+                            }
+                            .addservices_bottom_checkbox_item span {
+                                font-family: Nunito;
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                align-items: center;
+                                color: #282739;
+                                margin: 0 4px;
+                                line-height: 32px;
+                            }
+                        }
+                        .addservices_bottom_input_items {
+                            .addservices_bottom_input_item_item {
+                                align-items: center;
+                                justify-content: space-between;
+                            }
+                            .addservices_bottom_input_item_item input {
+                                padding: 10px 12px;
+                                width: 56px;
+                                height: 36px;
+                                background: #ffffff;
+                                border: 1.5px solid #d4d4d7;
+                                box-sizing: border-box;
+                                border-radius: 8px;
+                                margin: 4px 10px;
+                            }
+                            .addservices_bottom_input_item_item span {
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 24px;
+                                align-items: center;
+                                color: #282739;
+                                margin: 0 4px;
+                            }
+                        }
+                    }
+                    .bottom_content {
+                        display: flex;
+                        .bottom_content_about {
+                            display: flex;
+                            p {
+                                color: red;
+                                width: 6px;
+                                height: 6px;
+                                margin-top: 2px;
+                            }
+                            span {
+                                align-items: center;
+                                margin-left: 2px;
+                                color: #7e7d88;
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                        }
                     }
                 }
             }
