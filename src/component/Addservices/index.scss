@@ -84,6 +84,20 @@
                     color: #282739;
                 }
                 .addservices_input_left {
+                    .addservices_input_left_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }                       
+                    }
                     .input1 {
                         @include input_2;
                         background-color: #eaeaec;

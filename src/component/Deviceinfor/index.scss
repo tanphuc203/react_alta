@@ -88,8 +88,37 @@
                     color: #282739;
                 }
                 .deviceinfor_input_left {
+                    .deviceinfor_input_left_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }                 
+                    }
+                    
                 }
                 .deviceinfor_input_right {
+                    .deviceinfor_input_right_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }      
+                    }
                 }
                 .deviceinfor_input_bottom {
                     position: absolute;
@@ -108,6 +137,20 @@
                         flex-grow: 0;
                         margin: 8px 0px;
                         padding-left: 8px;
+                    }
+                    .deviceinfor_input_bottom_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }      
                     }
                 }
             }

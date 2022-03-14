@@ -69,19 +69,37 @@ const index = () => {
         <div className="deviceupdate_input">
           <div className="deviceupdate_input_about">
             <div className="deviceupdate_input_left">
-              <p>Mã thiết bị: *</p>
+              <div className="deviceupdate_input_left_title">
+                <span>Mã thiết bị: </span>
+                <p> *</p>
+              </div>
               <input placeholder="KIO_01"></input>
-              <p>Tên thiết bị: *</p>
+              <div className="deviceupdate_input_left_title">
+                <span>Tên thiết bị: </span>
+                <p>*</p>
+              </div>
               <input placeholder="Kiosk"></input>
-              <p>Địa chỉ IP: *</p>
+              <div className="deviceupdate_input_left_title">
+                <span>Địa chỉ IP: </span>
+                <p>*</p>
+              </div>
               <input placeholder="128.172.308"></input>
             </div>
-            <div className="deviceinfor_input_right">
-              <p>Loại thiết bị: *</p>
+            <div className="deviceupdate_input_right">
+              <div className="deviceupdate_input_right_title">
+                <span>Loại thiết bị: </span>
+                <p>*</p>
+              </div>
               <input placeholder="Kiosk"></input>
-              <p>Tên đăng nhập: *</p>
+              <div className="deviceupdate_input_right_title">
+                <span>Tên đăng nhập: </span>
+                <p>*</p>
+              </div>
               <input placeholder="Linhkyo011"></input>
-              <p>Mật khẩu: *</p>
+              <div className="deviceupdate_input_right_title">
+                <span>Mật khẩu: </span>
+                <p>*</p>
+              </div>
               <input placeholder="CMS"></input>
             </div>
             {/* <div className="deviceupdate_input_bottom">
@@ -90,45 +108,47 @@ const index = () => {
                 className="input"
               ></input>
             </div> */}
-           
           </div>
           <form>
-              <label>Dịch vụ sử dụng: *</label>
-              <div className="text">
-                {text.map((item, index) => {
-                  return (
-                    <div className="text_item" key={index}>
-                      <button>
-                        {item.text}
-                        <svg
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M15 5L5 15"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M5 5L15 15"
-                            stroke="white"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  );
-                })}
-              </div>
-              <span>* Là trường thông tin bắt buộc</span>
-            </form>
+            <label>Dịch vụ sử dụng: *</label>
+            <div className="text">
+              {text.map((item, index) => {
+                return (
+                  <div className="text_item" key={index}>
+                    <button>
+                      {item.text}
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15 5L5 15"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M5 5L15 15"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="lasttitle">
+              <p className="">*</p>
+              <span className="">Là trường thông tin bắt buộc</span>
+            </div>
+          </form>
           <div className="deviceupdate_input_button">
             <Link to="/Equipment">
               <button className="deviceupdate_input_button_1">Hủy bỏ</button>

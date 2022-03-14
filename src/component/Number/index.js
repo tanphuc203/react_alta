@@ -1,75 +1,310 @@
-// import React from "react";
+import React, { Component } from "react";
+import { useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "./index.scss";
-import React, { FC } from "react";
-
-const index = () => {
+// import Bodyleft from "../list/index";
+export default function Dashboard_content() {
   return (
-    <div className="Info_top_right_icon">
-      <div className="noti">
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.1168 12.0743L15.2834 10.691C15.1084 10.3827 14.9501 9.79935 14.9501 9.45768V7.34935C14.9501 5.39102 13.8001 3.69935 12.1418 2.90768C11.7084 2.14102 10.9084 1.66602 9.99178 1.66602C9.08345 1.66602 8.26678 2.15768 7.83345 2.93268C6.20845 3.74102 5.08345 5.41602 5.08345 7.34935V9.45768C5.08345 9.79935 4.92511 10.3827 4.75012 10.6827L3.90845 12.0743C3.57512 12.6327 3.50012 13.2493 3.70845 13.816C3.90845 14.3743 4.38345 14.8077 5.00012 15.016C6.61678 15.566 8.31678 15.8327 10.0168 15.8327C11.7168 15.8327 13.4168 15.566 15.0334 15.0244C15.6168 14.8327 16.0668 14.391 16.2834 13.816C16.5001 13.241 16.4418 12.6077 16.1168 12.0743Z"
-            fill="#FFAC6A"
-          />
-          <path
-            d="M12.3582 16.6743C12.0082 17.641 11.0832 18.3327 9.9999 18.3327C9.34157 18.3327 8.69157 18.066 8.23324 17.591C7.96657 17.341 7.76657 17.0077 7.6499 16.666C7.75824 16.6827 7.86657 16.691 7.98324 16.7077C8.1749 16.7327 8.3749 16.7577 8.5749 16.7743C9.0499 16.816 9.53324 16.841 10.0166 16.841C10.4916 16.841 10.9666 16.816 11.4332 16.7743C11.6082 16.7577 11.7832 16.7493 11.9499 16.7243C12.0832 16.7077 12.2166 16.691 12.3582 16.6743Z"
-            fill="#FFAC6A"
-          />
-        </svg>
-        <div className="noti_icon">
-          <h3>Thông báo</h3>
-          <div className="noti_icon_item">
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+    <div className="container">
+      {/* <div className="bodyleft">
+        <Bodyleft />
+      </div> */}
+      <div className="top_container">
+        <div className="top_content">
+          <div>
+            <div className="combobox_title">
+              <a>Tên dịch vụ</a>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+            <div className="combobox_content">
+              <form>
+                <select className="combobox_content_select">
+                  <option
+                    className="combobox_content_option"
+                    value="Tất cả"
+                  >
+                    Tất cả
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Khám sản - Phụ khoa"
+                  >
+                    Khám sản - Phụ khoa
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Khám răng hàm mặt"
+                  >
+                    Khám răng hàm mặt
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Khám tai mũi họng"
+                  >
+                    Khám tai mũi họng
+                  </option>
+                </select>
+              </form>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+          </div>
+          <div>
+            <div className="combobox_title">
+              <a>Tình trạng</a>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+            <div className="combobox_content">
+              <form>
+                <select className="combobox_content_select">
+                  <option
+                    className="combobox_content_option"
+                    value="Tất cả"
+                  >
+                    Tất cả
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Đang chờ"
+                  >
+                    Đang chờ
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Đã sử dụng"
+                  >
+                    Đã sử dụng
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Bỏ qua"
+                  >
+                    Đã sử dụng
+                  </option>
+                </select>
+              </form>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+          </div>
+          <div>
+            <div className="combobox_title">
+              <a>Nguồn cấp</a>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+            <div className="combobox_content">
+              <form>
+                <select className="combobox_content_select">
+                  <option
+                    className="combobox_content_option"
+                    value="Tất cả"
+                  >
+                    Tất cả
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Kiosk"
+                  >
+                    Kiosk
+                  </option>
+                  <option
+                    className="combobox_content_option"
+                    value="Hệ thống"
+                  >
+                    Hệ thống
+                  </option>
+                </select>
+              </form>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+          </div>
+          <div>
+            <div className="combobox_title">
+              <a>Từ khóa</a>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
+            <div className="combobox_content">
+              <div>
+                <form action="/action_page.php">
+                  <input
+                    className="combobox_content_select"
+                    type="text"
+                    placeholder="Nhập từ khóa "
+                    name="search"
+                  />
+                  <button className="search_icon" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </form>
+              </div>
             </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
-            </div>
-            <div className="noti_icon_item_block">
-              <p>Người dùng: Nguyễn Thị Thùy Dung</p>
-              <span>Thời gian nhận số: 12h20 ngày 30/11/2021</span>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bottom_container">
+        <table className="table_device">
+          <tr>
+            <th>STT</th>
+            <th>Tên khách hàng</th>
+            <th>Tên dịch vụ </th>
+            <th>Thời gian cấp</th>
+            <th>Hạn sử dụng</th>
+            <th>Trạng thái</th>
+            <th>Nguồn cấp</th>
+            <th></th>
+          </tr>
+          <tr>
+            <td>2010001</td>
+            <td>Lê Huỳnh Ái Vân</td>
+            <td>Khám tim mạch</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="blue_dot "></span>
+              Đang chờ
+            </td>
+            <td>Kiosk</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010002</td>
+            <td>Huỳnh Ái Vân</td>
+            <td>Khám sản - Phụ Khoa</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="gray_dot"></span>
+              Đã sử dụng
+            </td>
+            <td>Kiosk</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010003</td>
+            <td>Lê Ái Vân</td>
+            <td>Khám răng hàm mặt</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="blue_dot"></span>
+              Đang chờ
+            </td>
+            <td>Hệ thống</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010004</td>
+            <td>Nguyễn Ái Vân</td>
+            <td>Khám tai mũi họng</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="blue_dot"></span>
+              Đang chờ
+            </td>
+            <td>Hệ thống</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010005</td>
+            <td>Trần Thị Ái Vân</td>
+            <td>Khám hô hấp</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="blue_dot"></span>
+              Đang chờ
+            </td>
+            <td>Kiosk</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010006</td>
+            <td>Lê Huỳnh Nghĩa</td>
+            <td>Khám tổng quát</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="gray_dot"></span>
+              Đã sử dụng
+            </td>
+            <td>Hệ thống</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010007</td>
+            <td>Lê Huỳnh Nghĩa</td>
+            <td>Khám tai mũi họng</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="gray_dot"></span>
+              Đã sử dụng
+            </td>
+            <td>Kiosk</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010008</td>
+            <td>Lê Huỳnh Đức</td>
+            <td>Khám tổng quát</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="red_dot"></span>Bỏ
+              qua
+            </td>
+            <td>Hệ thống</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+          <tr>
+            <td>2010009</td>
+            <td>Lê Thị Cẩm Tiên</td>
+            <td>Khám tai mũi họng</td>
+            <td>14:35 - 07/11/2021</td>
+            <td>14:35 - 12/11/2021</td>
+            <td>
+              <span className="gray_dot"></span>
+              Đã sử dụng
+            </td>
+            <td>Hệ thống</td>
+            <td>
+              <Link to="/level_management_info">Chi tiết</Link>
+            </td>
+          </tr>
+        </table>
+        <div>
+          <div className="nextpage">
+            <a className="caret_left"></a>
+            <a className="page_active">1</a>
+            <a>2</a>
+            <a>3</a>
+            <a>4</a>
+            <a>5</a>
+            <a>...</a>
+            <a>10</a>
+            <a className="caret_right"></a>
+          </div>
+        </div>
+      </div>
+      <div className="add_device">
+        <div className="total_add_device">
+          {/* <div
+            className="add"
+            onClick={() => history.push("/device_add")}
+          ></div> */}
+          <div className="add_title">
+            <a>Cấp số mới</a>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default index;
+}

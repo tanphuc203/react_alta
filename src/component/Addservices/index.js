@@ -30,9 +30,15 @@ const index = () => {
         <div className="addservices_input">
           <div className="addservices_input_about">
             <div className="addservices_input_left">
-              <p>Mã dịch vụ: *</p>
+              <div className="addservices_input_left_title">
+                <span>Mã dịch vụ:</span>
+                <p>*</p>
+              </div>
               <input className="input1" placeholder="201"></input>
-              <p>Tên dịch vụ: *</p>
+              <div className="addservices_input_left_title">
+                <span>Tên dịch vụ:</span>
+                <p>*</p>
+              </div>
               <input className="input1" placeholder="Khám tĩnh mạch"></input>
             </div>
             <div className="addservices_input_right">
@@ -76,15 +82,12 @@ const index = () => {
                 </div>
               </div>
               <div className="bottom_content">
-              <div className="bottom_content_about">
-                <p className="">*</p>
-                <span className="">
-                  Là trường thông tin bắt buộc
-                </span>
+                <div className="bottom_content_about">
+                  <p>*</p>
+                  <span>Là trường thông tin bắt buộc</span>
+                </div>
               </div>
             </div>
-            </div>
-            
           </div>
           <div className="addservices_input_button">
             <Link to="/Service">

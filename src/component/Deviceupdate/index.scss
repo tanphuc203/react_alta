@@ -88,8 +88,36 @@
                     color: #282739;
                 }
                 .deviceupdate_input_left {
+                    .deviceupdate_input_left_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }
+                    }
                 }
                 .deviceupdate_input_right {
+                    .deviceupdate_input_right_title {
+                        display: flex;
+                        p {
+                            color: red;
+                            width: 6px;
+                            height: 6px;
+                            margin-top: 2px;
+                        }
+                        span {
+                            align-items: center;
+                            margin-left: 2px;
+                            line-height: 21px;
+                        }
+                    }
                 }
                 // .deviceupdate_input_bottom {
                 //     position: absolute;
@@ -116,10 +144,10 @@
                 flex-direction: column;
                 margin-left: 68px;
                 label {
-                  font-weight: 600;
-                  font-size: 16px;
-                  margin: 16px 0 8px 0;
-                  color: #282739;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin: 16px 0 8px 0;
+                    color: #282739;
                 }
                 .text {
                     width: 1120px;
@@ -153,9 +181,24 @@
                         }
                     }
                 }
+                .lasttitle {
+                    display: flex;
+                    p {
+                        color: red;
+                        width: 6px;
+                        height: 6px;
+                        margin-top: 2px;
+                    }
+                    span {
+                        align-items: center;
+                        margin-left: 2px;
+                        color: #7e7d88;
+                        font-size: 14px;
+                        line-height: 21px;
+                    }
+                }
             }
 
-            
             .deviceupdate_input_button {
                 margin-left: 35%;
                 // margin-top: -40px;
