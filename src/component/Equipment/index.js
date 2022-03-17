@@ -24,12 +24,7 @@ const index = () => {
           </div>
         </div>
         <div className="equipment_right_bottom">Danh sách thiết bị</div>
-        <div className="equipment_right_add">
-          <Link to="/Deviceinfor">
-            <img src={Add} alt="" />
-          </Link>
-          <span>Thêm thiết bị</span>
-        </div>
+
         <div className="equipment_right_content">
           <div className="equipment_right_content_icon">
             <div className="equipment_right_content_icon_1">
@@ -245,6 +240,12 @@ const index = () => {
             </table>
           </div>
         </div>
+      </div>
+      <div className="equipment_right_add">
+        <Link to="/Deviceinfor">
+          <img src={Add} alt="" />
+        </Link>
+        <p>Thêm thiết bị</p>
       </div>
     </div>
   );

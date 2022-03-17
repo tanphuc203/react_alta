@@ -6,7 +6,6 @@
     }
     .equipment_right {
         width: 100%;
-        // background-color: #b1b1b1;
         position: relative;
         .equipment_right_top {
             display: flex;
@@ -51,14 +50,7 @@
             color: #ff7506;
             margin-left: 24px;
         }
-        .equipment_right_add {
-            display: flex;
-            align-items: center;
-            padding: 10px;
-            margin: 10px;
-            justify-content: flex-end;
-            color: #ff7506;
-        }
+
         .equipment_right_content {
             .equipment_right_content_icon {
                 margin-bottom: 16px;
@@ -168,5 +160,12 @@
                 }
             }
         }
+    }
+    .equipment_right_add {
+        align-items: center;
+        margin-top: 235px;
+        margin-left: 10px;
+        justify-content: flex-end;
+        color: #ff7506;
     }
 }
