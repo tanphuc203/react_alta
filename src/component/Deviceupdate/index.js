@@ -110,7 +110,10 @@ const index = () => {
             </div> */}
           </div>
           <form>
-            <label>Dịch vụ sử dụng: *</label>
+            <div className="deviceupdate_input_bottom">
+              <span>Dịch vụ sử dụng:</span>
+              <p>*</p>
+            </div>
             <div className="text">
               {text.map((item, index) => {
                 return (

@@ -110,9 +110,9 @@ export default function Dashboard_content() {
                 <a>Từ khóa</a>
               </div>
               <div className="box_content">
-                <form action="/action_page.php">
+                <div className="a">
                   <input
-                    className="bobox_content_select"
+                    className="input"
                     type="text"
                     placeholder="Nhập từ khóa "
                     name="search"
@@ -120,7 +120,7 @@ export default function Dashboard_content() {
                   <button className="search_icon" type="submit">
                     <i class="fa fa-search"></i>
                   </button>
-                </form>
+                </div>
               </div>
             </div>
           </div>

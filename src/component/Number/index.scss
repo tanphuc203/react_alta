@@ -68,19 +68,31 @@
                     }
                 }
                 .top_content_1 {
+                    .box_title {
+                        font-weight: bold;
+                    }
                 }
                 .top_content_2 {
+                    .box_title {
+                        font-weight: bold;
+                    }
                     margin-left: 14px;
                 }
                 .top_content_3 {
+                    .box_title {
+                        font-weight: bold;
+                    }
                     margin-left: 14px;
                 }
                 .top_content_5 {
                     margin-left: 360px;
+                    .box_title {
+                        font-weight: bold;
+                    }
                     .box_content {
-                        form {
+                        .a {
                             .input {
-                                width: 300px;
+                                width: 240px;
                                 height: 44px;
                                 border: 1.5px solid #d4d4d7;
                                 box-sizing: border-box;
@@ -90,13 +102,7 @@
                                 align-items: center;
                                 padding: 10px 12px;
                             }
-                            img {
-                                margin-left: -35px;
-                                margin-top: 10px;
-                            }
-
                         }
-                        
                     }
                 }
             }
