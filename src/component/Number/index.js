@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { useHistory } from "react-router-dom";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "./index.scss";
 import Bodyleft from "../list/index";

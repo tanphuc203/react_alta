@@ -18,6 +18,7 @@ import Deviceupdate from './component/Deviceupdate/index';
 import Service from './component/Servicee/index';
 import Notify from './component/Notify/index';
 import Addservices from './component/Addservices/index';
+import Report from './component/Report/index';
 ;
 
 
@@ -44,6 +45,7 @@ function App() {
           <Route path="/Service" element={<Service />} />
           <Route path="Notify" element={<Notify />} />
           <Route path="/Addservices" element={<Addservices />} />
+          <Route path="/Report" element={<Report />} />
           {/* //test */}
       </Routes>
     </div>        
